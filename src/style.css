@@ -1,15 +1,71 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --text-color: #272142;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --navigation-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  color: #000000;
+  font-weight: 700;
+}
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-size: 96px;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
+h2 {
+  font-size: 64px;
 }
 
-button {
-  font-family: "Montserrat", sans-serif;
+a {
+  font-family: var(--navigation-font-family);
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding-top: 276px;
+  padding-bottom: 271px;
+}
+
+.hero p {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.hero h2 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+a.main-button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 2px;
+  padding: 18px 46px;
+}
+
+a.minor-button {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
