@@ -31,8 +31,29 @@ h2 {
   font-size: 64px;
 }
 
+h3 {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-color);
+  margin-top: 47px;
+  padding-top: 80px;
+  margin-bottom: 82px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
 a {
   font-family: var(--navigation-font-family);
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 130px;
 }
 
 .hero {
@@ -62,10 +83,127 @@ a.main-button {
   font-weight: 500;
   line-height: 27px;
   letter-spacing: 2px;
-  padding: 18px 46px;
+  padding: 18px 41px;
 }
 
 a.minor-button {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 2px;
+  padding: 18px 31px;
+}
+
+.featured-project {
+  margin-top: 65px;
+}
+
+.project-description {
+  margin-top: 70px;
+  margin-bottom: 75px;
+}
+
+.project-description p {
+  line-height: 1.87;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+
+.inquiry {
+  background-color: var(--secondary-color);
+  margin-top: 130px;
+  border-radius: 20px;
+  padding: 50px 122px 27px 120px;
+}
+
+.inquiry h2 {
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.inquiry p {
+  font-size: 18px;
+}
+
+footer .email {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+
+footer .icons {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .featured-projects {
+    text-align: center;
+  }
+  .project-description {
+    padding-left: 12px !important;
+  }
+  img {
+    width: 75%;
+  }
+  .inquiry {
+    padding-left: 60px;
+    padding-right: 61px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 43px;
+  }
+  img {
+    display: none;
+  }
+  .project-description {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .hero {
+    padding-top: 184px;
+    padding-bottom: 181px;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 47px;
+  }
+  h2,
+  .inquiry h2 {
+    font-size: 32px;
+  }
+  h3 {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .inquiry {
+    padding-left: 30px;
+    padding-right: 31px;
+    margin-top: 65px;
+  }
+  footer .email {
+    font-size: 20px;
+  }
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+  .featured-project {
+    margin-top: 30px;
+  }
 }
