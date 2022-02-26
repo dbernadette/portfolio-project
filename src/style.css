@@ -75,6 +75,32 @@ footer {
   color: var(--text-color);
 }
 
+.content {
+  padding-top: 239px;
+  padding-bottom: 24px;
+}
+
+.description {
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.description h1 {
+  font-size: 64px;
+}
+
+.description h2 {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.description p {
+  line-height: 1.87;
+  margin-top: 28px;
+  margin-bottom: 48px;
+}
+
 a.main-button {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -94,6 +120,10 @@ a.minor-button {
   line-height: 27px;
   letter-spacing: 2px;
   padding: 18px 31px;
+}
+
+.profile-pic {
+  border-radius: 250px;
 }
 
 .featured-project {
@@ -169,14 +199,16 @@ footer .icons {
     margin-top: 25px;
     margin-bottom: 30px;
   }
-  .hero {
+  .hero,
+  .content {
     padding-top: 184px;
     padding-bottom: 181px;
   }
 }
 
 @media (max-width: 300px) {
-  h1 {
+  h1,
+  .description h1 {
     font-size: 47px;
   }
   h2,
@@ -199,7 +231,8 @@ footer .icons {
   footer .email {
     font-size: 20px;
   }
-  .hero {
+  .hero,
+  .content {
     padding-top: 80px;
     padding-bottom: 70px;
   }
