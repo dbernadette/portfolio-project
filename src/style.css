@@ -242,12 +242,20 @@ footer .email {
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 24px;
-  color: #000000;
 }
 
-footer .icons {
+footer .email a {
+  text-decoration: none;
+  color: #000000;
+  font-family: var(--default-font-family);
+}
+
+footer .icon {
   color: var(--primary-color);
   font-size: 18px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 12px 14px;
 }
 
 @media (max-width: 767px) {
@@ -265,6 +273,16 @@ footer .icons {
     padding-left: 60px;
     padding-right: 61px;
   }
+}
+
+.footnote .source-code {
+  font-family: var(--default-font-family);
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.footnote .source-code:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 576px) {
