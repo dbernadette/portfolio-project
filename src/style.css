@@ -95,6 +95,20 @@ footer {
   color: var(--text-color);
 }
 
+.description h3 {
+  color: var(--primary-color);
+}
+
+.description h4,
+.description h4 a {
+  font-family: var(--navigation-font-family);
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
 .description p {
   line-height: 1.87;
   margin-top: 28px;
@@ -124,6 +138,10 @@ a.minor-button {
 
 .profile-pic {
   border-radius: 250px;
+}
+
+.description .profile-pic {
+  border-radius: 50px;
 }
 
 .featured-project {
@@ -236,6 +254,9 @@ footer .icons {
   h3 {
     padding-top: 0;
     margin-bottom: 0;
+  }
+  h4 {
+    font-size: 18px;
   }
   footer {
     padding-left: 20px;
